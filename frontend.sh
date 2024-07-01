@@ -27,7 +27,7 @@ VALIDATE $? "Extracting frontend code"
 #check your repo and path
 ## ## whiel doing manually in linux we use vim editor but in vscode we need to seperate file with .conf (expense.conf)
 
-cp /home/ec2-user/expense-shell-1/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
+cp /home/ec2-user/expense-shell-1/expense.conf  /etc/nginx/default.d/expense.conf &>>$LOGFILE
 VALIDATE $? "Copied expense conf"
 
 systemctl restart nginx &>>$LOGFILE
