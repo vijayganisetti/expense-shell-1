@@ -40,7 +40,7 @@ VALIDATE $? "Installing nodejs dependencies"
 
 ## whiel doing manually in linux we use vim editor but in vscode we need to seperate file with .service extension (backend.service)
 #check your repo and path / and use cp path
-cp /home/ec2-user/expense-shell/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
+cp /home/ec2-user/expense-shell-1 /backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 VALIDATE $? "Copied backend service"
 
 systemctl daemon-reload &>>$LOGFILE
